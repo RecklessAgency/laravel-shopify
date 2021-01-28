@@ -1,11 +1,15 @@
 {
-    "name": "oseintow/laravel-shopify",
+    "name": "reckless/laravel-shopify",
     "description": "Laravel shopify package",
     "license": "MIT",
     "authors": [
         {
             "name": "michael osei ntow",
             "email": "oseintow@gmail.com"
+        },
+        {
+            "name": "Reckless",
+            "email": "dev@reckless.agency"
         }
     ],
     "require": {
@@ -15,16 +19,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Oseintow\\": "src/"
+            "Reckless\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Oseintow\\Shopify\\ShopifyServiceProvider"
+                "Reckless\\Shopify\\ShopifyServiceProvider"
             ],
             "aliases": {
-                "Shopify": "Oseintow\\Shopify\\Facades\\Shopify"
+                "Shopify": "Reckless\\Shopify\\Facades\\Shopify"
             }
         }
     },
