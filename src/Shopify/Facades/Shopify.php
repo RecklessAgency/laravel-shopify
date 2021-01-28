@@ -1,6 +1,6 @@
 <?php
 
-namespace Oseintow\Shopify\Facades;
+namespace Reckless\Shopify\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

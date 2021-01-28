@@ -6,7 +6,7 @@
  * Time: 7:28 PM
  */
 
-namespace Oseintow\Shopify\Exceptions;
+namespace Reckless\Shopify\Exceptions;
 
 use Exception;
 

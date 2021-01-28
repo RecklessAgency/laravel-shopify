@@ -1,6 +1,6 @@
 <?php
 
-namespace Oseintow\Shopify;
+namespace Reckless\Shopify;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
@@ -25,7 +25,7 @@ class ShopifyServiceProvider extends ServiceProvider
             __DIR__.'/../config/shopify.php' => config_path('shopify.php'),
         ]);
 
-        $this->app->alias('Shopify', 'Oseintow\Shopify\Facades\Shopify');
+        $this->app->alias('Shopify', 'Reckless\Shopify\Facades\Shopify');
     }
 
     /**
@@ -35,7 +35,7 @@ class ShopifyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('shopify',function($app) 
+        $this->app->singleton('shopify',function($app)
         {
             return new Shopify(new Client);
         });
