@@ -1,10 +1,10 @@
 <?php
 
-namespace Oseintow\Shopify;
+namespace Reckless\Shopify;
 
 use GuzzleHttp\Client;
-use Oseintow\Shopify\Exceptions\ShopifyApiException;
-use Oseintow\Shopify\Exceptions\ShopifyApiResourceNotFoundException;
+use Reckless\Shopify\Exceptions\ShopifyApiException;
+use Reckless\Shopify\Exceptions\ShopifyApiResourceNotFoundException;
 
 class Shopify
 {
@@ -47,11 +47,11 @@ class Shopify
         if (is_array($scope)) $scope = implode(",", $scope);
 
         $url = "https://{$this->shopDomain}/admin/oauth/authorize?client_id={$this->key}&scope=" . urlencode($scope);
-        
+
         if ($redirect_url != '') $url .= "&redirect_uri=" . urlencode($redirect_url);
 
         if ($nonce!='') $url .= "&state=" . urlencode($nonce);
-        
+
         return $url;
     }
 
@@ -70,14 +70,14 @@ class Shopify
 
         return $this;
     }
-    
+
     public function setKey($key)
     {
         $this->key = $key;
 
         return $this;
     }
-    
+
     public function setSecret($secret)
     {
         $this->secret = $secret;
