@@ -206,16 +206,5 @@ Shopify::getStatusCode(); // 200
 Shopify::getReasonPhrase(); // ok
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Credits
+https://github.com/oseintow/laravel-shopify (https://github.com/oseintow)
